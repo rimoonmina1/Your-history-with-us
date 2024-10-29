@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إعدادات الموقع</title>
+<link rel="stylesheet" href="history style.css">
+<link id="theme-style" rel="stylesheet" href="history style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .settings-container {
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            font-size: 1.2em;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="menu">
+            <li><a href="index.html">الصفحة الرئيسية</a></li>
+            <li><a href="history setting.html">الإعدادات</a></li>
+            <li><a href="history law.html">الشروط والأحكام</a></li>
+            <li>
+                <a href="app.html">تطبيق للموبيل</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="settings-container">
+        <h1>إعدادات الموقع</h1>
+        <h2>اختر لون التصميم</h2>
+        <label for="color-select">اختر اللون المفضل:</label>
+        <select id="color-select">
+            <option value="default">افتراضي</option>
+            <option value="blue">أزرق</option>
+            <option value="green">أخضر</option>
+            <option value="red">أحمر</option>
+        </select>
+        <button onclick="changeColor()">تغيير اللون</button>
+    </div>
+
+    <script>
+        function changeColor() {
+            const color = document.getElementById('color-select').value;
+            localStorage.setItem('theme-color', color);  // Save the selected color to localStorage
+            applyTheme();  // Apply the theme immediately after the user selects it
+        }
+    
+        function applyTheme() {
+            const color = localStorage.getItem('theme-color') || 'default';  // Get the saved color from localStorage
+            const themeStyle = document.getElementById('theme-style');  // The link tag for theme styles
+    
+            if (color === 'blue') {
+                themeStyle.setAttribute('href', 'blue-history-style.css');
+            } else if (color === 'green') {
+                themeStyle.setAttribute('href', 'green-history-style.css');
+            } else if (color === 'red') {
+                themeStyle.setAttribute('href', 'red-history-style.css');
+            } else {
+                themeStyle.setAttribute('href', 'history style.css');  // Default theme
+            }
+        }
+    
+        // Apply the theme when the page loads
+        window.onload = applyTheme;
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تاريخ</title>
+    <link rel="stylesheet" href="history style.css">
+    <link id="theme-style" rel="stylesheet" href="history style.css">
+    
+</head>
+<body>
+<div>
+    <ul class="menu">
+        <li>
+            <a href="index.html">الصفحة الرئسية</a>
+        </li>
+        <li>
+            <a href="history setting.html">الاعدادات</a>
+        </li>
+        <li>
+            <a href="history law.html">الشروط والاحكام</a>
+        </li>
+        <li>
+            <a href="app.html">تطبيق للموبيل</a>
+        </li>
+
+     </ul>
+</div>
+<h1>لائحة القوانين الخاصة بالموقع</h1>
+    
+    <h2>1. الالتزام بالموضوعات العلمية والتاريخية</h2>
+    <ul>
+        <li>يختص الموقع بتقديم المحتوى العلمي والتاريخي للصف الأول الثانوي فقط.</li>
+        <li>يُرجى الالتزام بالموضوعات ذات الصلة، وعدم نشر أو مناقشة موضوعات غير متعلقة بالمواد العلمية أو التاريخ.</li>
+    </ul>
+
+    <h2>2. الاحترام المتبادل بين الأعضاء</h2>
+    <ul>
+        <li>يجب على جميع المستخدمين الحفاظ على الاحترام المتبادل في جميع التفاعلات والنقاشات.</li>
+        <li>يمنع استخدام أي لغة هجومية أو سلوك مسيء تجاه الآخرين.</li>
+    </ul>
+
+    <h2>3. المعلومات الأكاديمية الدقيقة</h2>
+    <ul>
+        <li>يتعهد الموقع بتقديم معلومات دقيقة وموثوقة تتعلق بالمواد العلمية والتاريخ.</li>
+        <li>يُفضل التحقق من صحة المعلومات قبل نشرها أو مشاركتها.</li>
+    </ul>
+
+    <h2>4. عدم نشر محتوى مكرر أو غير ذي صلة</h2>
+    <ul>
+        <li>يُمنع نشر أي محتوى مكرر أو غير ذي صلة بموضوعات الموقع.</li>
+        <li>في حالة تكرار ذلك، قد يتم اتخاذ إجراءات تجاه الحساب.</li>
+    </ul>
+
+    <h2>5. استخدام المصادر والمراجع المعتمدة</h2>
+    <ul>
+        <li>عند الاستشهاد بمعلومات من مصادر خارجية، يُفضل استخدام المراجع المعتمدة والموثوقة.</li>
+        <li>يجب ذكر المصدر بشكل واضح عند نقل أي محتوى علمي أو تاريخي.</li>
+    </ul>
+    <script>
+        function applyTheme() {
+            const color = localStorage.getItem('theme-color') || 'default';
+            const themeStyle = document.getElementById('theme-style');
+    
+            if (color === 'blue') {
+                themeStyle.setAttribute('href', 'blue-history-style.css');
+            } else if (color === 'green') {
+                themeStyle.setAttribute('href', 'green-history-style.css');
+            } else if (color === 'red') {
+                themeStyle.setAttribute('href', 'red-history-style.css');
+            } else {
+                themeStyle.setAttribute('href', 'history style.css');
+            }
+        }
+    
+        window.onload = applyTheme;
+    </script>
+</body>
+</html>

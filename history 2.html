@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تاريخ</title>
+    <link rel="stylesheet" href="history style.css">
+<link id="theme-style" rel="stylesheet" href="history style.css">
+
+
+</head>
+<body>
+<div>
+    <ul class="menu">
+        <li>
+            <a href="index.html">الصفحة الرئسية</a>
+        </li>
+        <li>
+            <a href="history setting.html">الاعدادات</a>
+        </li>
+        <li>
+            <a href="history law.html">الشروط والاحكام</a>
+        </li>
+        <li>
+            <a href="app.html">تطبيق للموبيل</a>
+        </li>
+
+     </ul>
+</div>
+<div class="one">
+    <h1>
+<a href="2unit 1.html">الوحدة الاولي</a>
+    </h1>
+    <p>
+        الحضارة العربية وظهور الإسلام
+    </p>
+    <h1>
+        <a href="2unit 2.html">الوحدةالثانية</a>
+            </h1>
+            <p>
+                الفتوحات الإسلامية وانتشار الإسلام
+            </p>
+            <h1>
+                <a href="2unit 3.html">الوحدةالثالثة</a>
+                    </h1>
+                    <p>
+                        مصر والدول المستقلة
+                    </p>
+                    <h1>
+                        <a href="2unit 4.html">الوحدةالرابعة</a>
+                            </h1>
+                            <p>
+                                الحضارة الإسلامية وإسهاماتها
+                            </p>       
+    </div>
+    <script>
+        function applyTheme() {
+            const color = localStorage.getItem('theme-color') || 'default';
+            const themeStyle = document.getElementById('theme-style');
+    
+            if (color === 'blue') {
+                themeStyle.setAttribute('href', 'blue-history-style.css');
+            } else if (color === 'green') {
+                themeStyle.setAttribute('href', 'green-history-style.css');
+            } else if (color === 'red') {
+                themeStyle.setAttribute('href', 'red-history-style.css');
+            } else {
+                themeStyle.setAttribute('href', 'history style.css');
+            }
+        }
+    
+        window.onload = applyTheme;
+    </script>
+    
+</body>
+</html>

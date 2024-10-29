@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تاريجك معانا</title>
+    <link rel="stylesheet" href="history style.css">
+<link id="theme-style" rel="stylesheet" href="history style.css">
+
+</head>
+<body>
+<div>
+    <ul class="menu">
+        <li>
+            <a href="index.html">الصفحة الرئسية</a>
+        </li>
+        <li>
+            <a href="history setting.html">الاعدادات</a>
+        </li>
+        <li>
+            <a href="history law.html">الشروط والاحكام</a>
+        </li>
+        <li>
+            <a href="app.html">تطبيق للموبيل</a>
+        </li>
+
+     </ul>
+</div>
+<h1 class="head">تاريخك معانا</h1>
+<div class="one">
+    <h1>
+<a href="history 1.html">الصف الاول الثانوي</a>
+    </h1>
+    <p>
+        في الصف الأول الثانوي، يتعرف الطلاب على الحضارات القديمة التي أسست لمفاهيم المجتمعات البشرية. يركز المنهج على دراسة الحضارات القديمة في الشرق الأدنى مثل الحضارة المصرية القديمة وحضارات بلاد ما بين النهرين، كما يتناول تطور الكتابة والعمران والنظم السياسية والاجتماعية والدينية في تلك الحضارات. بالإضافة إلى ذلك، يستعرض الطلاب دور الحضارة المصرية في تكوين الهوية الثقافية، والإنجازات العلمية والمعمارية والفكرية التي أسهمت بها هذه الحضارات
+        </p>
+
+    <h1>
+        <a href="history 2.html">الصف الثاني الثانوي</a>
+            </h1>
+            <p>
+                في الصف الثالث الثانوي، يتم التركيز على دراسة الأحداث الكبرى التي شكلت التاريخ المصري الحديث والمعاصر. يبدأ المنهج بعصر محمد علي والتطورات الاقتصادية والعسكرية التي أحدثها في مصر، مروراً بالحركات الوطنية ومقاومة الاحتلال البريطاني، وصولاً إلى ثورة 1952 وتطوراتها حتى حرب أكتوبر 1973. يتناول الطلاب أيضاً دور مصر في دعم حركات التحرر الوطني في العالم العربي وأفريقيا، وكيف ساهمت مصر في تشكيل السياسة الإقليمية والدولية خلال القرن العشرين.
+                        </p>
+            <h1>
+                <a href="history 3.html">الصف الثالث الثانوي</a>
+                    </h1>
+                    <p>
+                        يركز منهج الصف الثاني الثانوي على دراسة التاريخ الإسلامي والحضارات التي ظهرت بعد ظهور الإسلام. يبدأ المنهج بنشأة الدولة الإسلامية في شبه الجزيرة العربية في عهد الرسول محمد صلى الله عليه وسلم، ثم يتناول الفتوحات الإسلامية وانتشار الإسلام في مختلف أنحاء العالم. كما يستعرض دور الخلفاء الراشدين والدولة الأموية والعباسية في توسيع الدولة الإسلامية، وتأثير الحضارة الإسلامية على العالم من الناحية العلمية والثقافية.
+                                        </p>
+
+
+
+</div>
+
+
+
+<script>
+    function applyTheme() {
+        const color = localStorage.getItem('theme-color') || 'default';
+        const themeStyle = document.getElementById('theme-style');
+
+        if (color === 'blue') {
+            themeStyle.setAttribute('href', 'blue-history-style.css');
+        } else if (color === 'green') {
+            themeStyle.setAttribute('href', 'green-history-style.css');
+        } else if (color === 'red') {
+            themeStyle.setAttribute('href', 'red-history-style.css');
+        } else {
+            themeStyle.setAttribute('href', 'history style.css');
+        }
+    }
+
+    window.onload = applyTheme;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

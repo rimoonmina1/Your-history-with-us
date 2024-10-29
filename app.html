@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تاريخ</title>
+    <link rel="stylesheet" href="history style.css">
+<link id="theme-style" rel="stylesheet" href="history style.css">
+
+</head>
+<body>
+    <div>
+        <ul class="menu">
+            <li>
+                <a href="index.html">الصفحة الرئسية</a>
+            </li>
+            <li>
+                <a href="history setting.html">الاعدادات</a>
+            </li>
+            <li>
+                <a href="history law.html">الشروط والاحكام</a>
+            </li>
+            <li>
+                <a href="app.html">تطبيق للموبيل</a>
+            </li>
+    
+         </ul>
+    </div>
+     <!-- العنوان الرئيسي -->
+     <div class="head">
+        <h1>تنزيل التطبيقات</h1>
+    </div>
+
+    <!-- قسم تحميل التطبيقات -->
+    <div class="one" id="apps">
+        <h2>تطبيقنا متاح الآن على الأندرويد وiOS!</h2>
+        <p>يمكنك تنزيل التطبيق الأنسب لجهازك عبر الروابط أدناه:</p>
+        
+        <!-- رابط تحميل الأندرويد -->
+        <a href="https://median.co/app/zwu20y1w49fbybm97dfu2vyxjg/build#app-download">تحميل تطبيق الأندرويد</a>
+
+        <!-- رابط تحميل iOS -->
+        <br><br>
+        <a href="https://median.co/app/zwu20y1w49fbybm97dfu2vyxjg/build#app-download">تحميل تطبيق iOS</a>
+    </div>
+    <script>
+        function applyTheme() {
+            const color = localStorage.getItem('theme-color') || 'default';
+            const themeStyle = document.getElementById('theme-style');
+    
+            if (color === 'blue') {
+                themeStyle.setAttribute('href', 'blue-history-style.css');
+            } else if (color === 'green') {
+                themeStyle.setAttribute('href', 'green-history-style.css');
+            } else if (color === 'red') {
+                themeStyle.setAttribute('href', 'red-history-style.css');
+            } else {
+                themeStyle.setAttribute('href', 'history style.css');
+            }
+        }
+    
+        window.onload = applyTheme;
+    </script>
+
+    
+</body>
+</html>
